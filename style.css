@@ -1,7 +1,7 @@
 :root {
   --text: #262421;
   --muted: #6b6560;
-  --bg: #fbfaf8;
+  --bg: #fdfdfc;
   --accent: #7a4a3a;
   --rule: #e4e0da;
   --max-width: 760px;
@@ -50,6 +50,12 @@ a:hover {
   letter-spacing: 0.01em;
 }
 
+.zh-name {
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 1.3rem;
+}
+
 .subtitle {
   margin: 0;
   font-size: 1.05rem;
@@ -63,6 +69,14 @@ a:hover {
   font-style: italic;
 }
 
+.header-photo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
 .header-photo {
   width: 128px;
   height: 128px;
@@ -70,6 +84,11 @@ a:hover {
   object-position: 50% 30%;
   border-radius: 50%;
   flex-shrink: 0;
+}
+
+.scholar-link {
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
 }
 
 .site-nav {
@@ -125,7 +144,12 @@ h3:first-of-type {
   margin-top: 0;
 }
 
-p { margin: 0 0 1rem; }
+p {
+  margin: 0 0 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
 
 .pub-list, .cv-list-simple {
   list-style: none;
