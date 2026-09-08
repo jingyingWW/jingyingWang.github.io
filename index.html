@@ -8,6 +8,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    if (saved) document.documentElement.setAttribute("data-theme", saved);
+  })();
+</script>
 </head>
 <body>
 
@@ -28,6 +34,7 @@
     <a href="#research">Research</a>
     <a href="#cv">CV</a>
     <a href="#contact">Contact</a>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">&#9789; Dark</button>
   </nav>
 </header>
 
@@ -93,6 +100,36 @@
 <footer>
   <p>&copy; 2026 Jingying Wang</p>
 </footer>
+
+<script>
+  (function () {
+    var btn = document.getElementById("theme-toggle");
+    var root = document.documentElement;
+
+    function systemPrefersDark() {
+      return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    }
+
+    function isDark() {
+      var attr = root.getAttribute("data-theme");
+      if (attr) return attr === "dark";
+      return systemPrefersDark();
+    }
+
+    function render() {
+      btn.textContent = isDark() ? "☀ Light" : "☽ Dark";
+    }
+
+    btn.addEventListener("click", function () {
+      var next = isDark() ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
+      render();
+    });
+
+    render();
+  })();
+</script>
 
 </body>
 </html>
