@@ -51,9 +51,11 @@ a:hover {
 }
 
 .zh-name {
-  font-weight: 400;
-  color: var(--muted);
-  font-size: 1.3rem;
+  font-family: "Songti SC", "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
+  font-weight: 500;
+  color: var(--text);
+  font-size: 1.7rem;
+  letter-spacing: 0.04em;
 }
 
 .subtitle {
