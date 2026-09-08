@@ -70,10 +70,10 @@ a:hover {
 }
 
 .zh-name {
-  font-family: "Songti SC", "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
+  font-family: "LXGW WenKai", "Songti SC", "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
   font-weight: 500;
   color: var(--text);
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   letter-spacing: 0.04em;
 }
 
@@ -214,10 +214,24 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.split-section {
+  display: flex;
+  gap: 3rem;
+}
+
+.split-col {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.split-col h2 {
+  scroll-margin-top: 1rem;
+}
+
 .cv-list {
   display: grid;
-  grid-template-columns: 8.5rem 1fr;
-  gap: 0.5rem 1.2rem;
+  grid-template-columns: 3.2rem 1fr;
+  gap: 0.5rem 0.8rem;
   margin: 0;
 }
 
@@ -244,6 +258,13 @@ footer {
     flex-direction: column-reverse;
     align-items: flex-start;
     gap: 1.2rem;
+  }
+  .split-section {
+    flex-direction: column;
+    gap: 0;
+  }
+  .split-col + .split-col h2 {
+    margin-top: 2rem;
   }
   .cv-list {
     grid-template-columns: 1fr;
