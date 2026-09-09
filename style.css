@@ -214,6 +214,11 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.cv-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 .split-section {
   display: flex;
   gap: 3rem;
