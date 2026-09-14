@@ -99,8 +99,8 @@ a:hover {
 }
 
 .header-photo {
-  width: 168px;
-  height: 168px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   object-position: 50% 30%;
   border-radius: 50%;
