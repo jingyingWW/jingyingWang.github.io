@@ -4,7 +4,6 @@
   --bg: #fdfdfc;
   --accent: #2f6f9e;
   --rule: #e4e0da;
-  --info: #7a4a3a;
   --max-width: 760px;
 }
 
@@ -15,7 +14,6 @@
     --bg: #1a1816;
     --accent: #7ab8e8;
     --rule: #38342f;
-    --info: #d99a7a;
   }
 }
 
@@ -25,7 +23,6 @@
   --bg: #1a1816;
   --accent: #7ab8e8;
   --rule: #38342f;
-  --info: #d99a7a;
 }
 
 * { box-sizing: border-box; }
@@ -236,7 +233,7 @@ p {
   font-family: inherit;
   font-size: 0.85rem;
   font-style: italic;
-  color: var(--info);
+  color: var(--muted);
   cursor: pointer;
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -251,7 +248,7 @@ p {
 }
 
 .abstract-toggle:hover {
-  border-bottom-color: var(--info);
+  border-bottom-color: var(--muted);
 }
 
 .abstract-box {
@@ -277,7 +274,7 @@ p {
   font-family: inherit;
   font-size: 0.92rem;
   font-style: italic;
-  color: var(--info);
+  color: var(--muted);
   cursor: pointer;
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -292,7 +289,7 @@ p {
 }
 
 .abstract-more:hover {
-  border-bottom-color: var(--info);
+  border-bottom-color: var(--muted);
 }
 
 .cv-download {
