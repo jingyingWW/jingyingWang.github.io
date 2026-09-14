@@ -70,7 +70,7 @@ a:hover {
 }
 
 .header-text {
-  margin-top: 0.6rem;
+  margin-top: 1.8rem;
 }
 
 .header-text h1 {
@@ -107,7 +107,7 @@ a:hover {
 .header-photo-wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.6rem;
   flex-shrink: 0;
 }
@@ -355,6 +355,9 @@ footer {
     text-align: center;
   }
   .site-nav {
+    align-items: center;
+  }
+  .header-photo-wrap {
     align-items: center;
   }
   main {
